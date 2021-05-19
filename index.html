@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(243, 243, 243);
+    }
+
+    td,
+    th {
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    td {
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row blue-grey darken-4" style="margin-bottom: 0;">
+    <div class="col s2" style="padding-bottom: 10px;">
+      <h6 class="white-text left" style="font-size: 24px;">
+        System Ventas<i class="small material-icons right">view_headline</i>
+      </h6>
+    </div>
+    <div class="col s10" style="padding-top: 13px;">
+      <h7 class="white-text right" style="font-size: 22px;">
+        Renzo Berrios Telleria<i class="small material-icons left" style="padding-top: 2px;">person</i>
+      </h7>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s2 z-depth-2 white">
+      <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field white">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons blue-text">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <ul class="collection" style="font-size: 11px;">
+
+        <li class="collection-item">
+          <div><i class="material-icons left">home</i>Almacen<a href="#!" class="secondary-content"><i
+                class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">shopping_cart</i>Compras<a href="#!" class="secondary-content"><i
+                class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">inventory_2</i>Tipo Documentos</div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">add_shopping_cart</i>Ventas<a href="#!" class="secondary-content"><i
+                class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">inventory_2</i>Inventario<a href="#!" class="secondary-content"><i
+                class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">groups</i>Usuarios<a href="#!" class="secondary-content"><i
+                class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">insert_chart_outlined</i>Reporte de Compras<a href="#!"
+              class="secondary-content"><i class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">insert_chart_outlined</i>Reporte de Ventas<a href="#!"
+              class="secondary-content"><i class="material-icons">navigate_next</i></a></div>
+        </li>
+        <li class="collection-item">
+          <div><i class="material-icons left">insert_chart_outlined</i>Gráficos Estadísticos<a href="#!"
+              class="secondary-content"><i class="material-icons">navigate_next</i></a></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col s10 right">
+      <div class="row">
+        <div class="col s12" style="padding: 0;">
+          <nav style="background-color: transparent;">
+            <div class="nav-wrapper grey lighten-2">
+              <ul class="left hide-on-med-and-down">
+                <li><a href="#" class="black-text"><i class="material-icons left">home</i>Inicio</a></li>
+                <li class="black-text">/</li>
+                <li><a href="#" class="black-text">Menú Principal</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col s12">
+
+          <div class="row" style="box-sizing: border-box;">
+            <div class="col s8" style="margin: 0;">
+
+              <div class="row">
+                <div class="col s2">
+                  <h6 style="font-weight: bold">Producto</h6>
+                </div>
+
+                <div class="col s10" style="margin-top: 15px;">
+                  <input class="white" style="border: 1px black solid;" type="text"
+                    placeholder="Buscar por código de barra o nombre del producto">
+                </div>
+              </div>
+
+              <table class="white">
+                <thead style="border-bottom: blue 2px solid;">
+                  <tr>
+                    <th>ITEM</th>
+                    <th>CANT.</th>
+                    <th>PRODUCTO</th>
+                    <th>MARCA</th>
+                    <th>PRECIO</th>
+                    <th>IMPORTE</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>Leche evaporada entera pack</td>
+                    <td>GLORIA</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>15.30</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>Leche chocolatada</td>
+                    <td>GLORIA</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>3.10</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>Leche fresca</td>
+                    <td>LAIVE</td>
+                    <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
+                        id=""></td>
+                    <td>3.20</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+
+
+
+            <div class="col s4 yellow">
+              6
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
+</body>
+
+</html>
