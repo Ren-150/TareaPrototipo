@@ -11,6 +11,7 @@
   <style>
     body {
       background-color: rgb(243, 243, 243);
+      height: 100%;
     }
 
     td,
@@ -41,7 +42,7 @@
 
 
   <div class="row">
-    <div class="col s2 z-depth-2 white">
+    <div class="col s2 z-depth-2 white" style="height: 100vh">
       <nav>
         <div class="nav-wrapper">
           <form>
@@ -53,7 +54,7 @@
           </form>
         </div>
       </nav>
-      <ul class="collection" style="font-size: 11px;">
+      <ul class="collection" style="font-size: 10px;">
 
         <li class="collection-item">
           <div><i class="material-icons left">home</i>Almacen<a href="#!" class="secondary-content"><i
@@ -128,7 +129,7 @@
                   <tr>
                     <th>ITEM</th>
                     <th>CANT.</th>
-                    <th>PRODUCTO</th>
+                    <th colspan="2" style="text-align: left;">PRODUCTO</th>
                     <th>MARCA</th>
                     <th>PRECIO</th>
                     <th>IMPORTE</th>
@@ -140,7 +141,7 @@
                     <td>1</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
-                    <td>Leche evaporada entera pack</td>
+                    <td colspan="2" style="text-align: left;">Leche evaporada entera pack</td>
                     <td>GLORIA</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
@@ -150,7 +151,7 @@
                     <td>2</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
-                    <td>Leche chocolatada</td>
+                    <td colspan="2" style="text-align: left;">Leche chocolatada</td>
                     <td>GLORIA</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
@@ -160,7 +161,7 @@
                     <td>3</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
-                    <td>Leche fresca</td>
+                    <td colspan="2" style="text-align: left;">Leche fresca</td>
                     <td>LAIVE</td>
                     <td><input style="width: 4rem; border: black 1px solid; padding-left: 8px;" type="text" name=""
                         id=""></td>
@@ -168,19 +169,86 @@
                   </tr>
                 </tbody>
               </table>
-
+              <div class="col s6 right-align" style="margin-top: 30px;">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">shopping_cart</i>Guardar
+                  Compra</a>
+              </div>
+              <div class="col s6 left-align" style="margin-top: 30px;">
+                <a class="waves-effect red btn"><i class="material-icons left">delete</i>Vaciar Carrito</a>
+              </div>
             </div>
 
 
+            <div class="col s4 white" style="margin-top: 13px; width: 32%;">
+              <div class="row">
+                <div class="col s12"
+                  style="background-color: rgb(211, 19, 19); text-align: center; height: 70px; padding-top: 7px; font-size: 32px; color: white; margin-bottom: 20px;">
+                  S/. 21.60
+                </div>
+                <div class="input-field col s6" style="padding: 0 20px;">
+                  <select>
+                    <option value="">FACTURA</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label style="color: black; font-weight: bold;">DOCUMENTO</label>
+                </div>
+                <div class="input-field col s6" style="padding: 0 20px;">
+                  <select>
+                    <option value="">CONTADO</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label style="color: black; font-weight: bold;">TIPO DE PAGO</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="001" id="serie" type="text" class="validate">
+                  <label for="serie" style="color: black; font-weight: bold;">SERIE</label>
+                </div>
 
+                <div class="input-field col s6">
+                  <input placeholder="000001" id="serie" type="text" class="validate">
+                  <label for="serie" style="color: black; font-weight: bold;">N° DE VENTA</label>
+                </div>
 
-            <div class="col s4 yellow">
-              6
+                <div class="input-field col s12">
+                  <input id="serie" type="date" class="validate">
+                  <label for="serie" style="color: black; font-weight: bold;">FECHA DE COMPRA</label>
+                </div>
+
+                <div class="input-field col s12">
+                  <input placeholder="RUC o Razón Social" id="serie" type="text" class="validate">
+                  <label for="serie" style="color: black; font-weight: bold;">PROVEEDOR</label>
+                </div>
+
+                <div class="col s12">
+                  <div class="row">
+                    <div class="col s7">
+                      <ul>
+                        <li>SUBTOTAL</li>
+                        <li>I.G.V. (18%)</li>
+                        <li>TOTAL</li>
+                      </ul>
+                    </div>
+
+                    <div class="col s5">
+                      <ul>
+                        <li>S/. 18.31</li>
+                        <li>S/. 3.29</li>
+                        <li>S/. 21.60</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
   </div>
@@ -191,14 +259,14 @@
   <script src="js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, options);
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems, options);
     });
 
     // Or with jQuery
 
     $(document).ready(function () {
-      $('.sidenav').sidenav();
+      $('select').formSelect();
     });
   </script>
 </body>
